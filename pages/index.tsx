@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import color from 'styles/color';
 
 const Container = styled.div`
   font-size: 30px;
-  color: green;
+  color: ${color.black};
 `;
 
 const index: React.FC = () => {
