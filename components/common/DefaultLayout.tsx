@@ -5,8 +5,16 @@ import styled from 'styled-components';
 
 const Container = styled.div``;
 
+const StyledSideBar = styled(SideBar)`
+  min-width: 200px;
+`;
+
 const ContentWrapper = styled.div`
   display: flex;
+
+  & > * + * {
+    margin-left: 20px;
+  }
 `;
 
 type DefaultLayoutProp = ComponentPropsWithoutRef<'div'>;
@@ -16,7 +24,7 @@ const DefaultLayout = ({ children, ...restProps }: DefaultLayoutProp) => {
     <Container {...restProps}>
       <GlobalNavigationBar />
       <ContentWrapper>
-        <SideBar />
+        <StyledSideBar />
         {children}
       </ContentWrapper>
     </Container>
