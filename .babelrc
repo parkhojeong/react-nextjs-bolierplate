@@ -8,6 +8,13 @@
       {
         "ssr": true
       }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": true
+      }
     ]
   ]
 }

@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const commonConfig = require('./next.config.common.js');
+const analyzerConfig = require('./next.config.analyzer.js');
+const antdConfig = require('./next.config.antd');
 
 module.exports = {
-  ...commonConfig,
+  ...analyzerConfig,
+  ...antdConfig,
 };
