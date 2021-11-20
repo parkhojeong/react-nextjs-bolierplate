@@ -3,20 +3,24 @@ import { createGlobalStyle, DefaultTheme, GlobalStyleComponent } from 'styled-co
 import { Provider } from 'react-redux';
 import Head from 'next/head';
 import { store } from 'store/store';
+import DefaultLayout from 'components/common/DefaultLayout';
 
 const GlobalStyle: GlobalStyleComponent<{}, DefaultTheme> = createGlobalStyle`
 `;
 
-function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>
+        <title>jebs admin</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       </Head>
 
       <GlobalStyle />
       <Provider store={store}>
-        <Component {...pageProps} />
+        <DefaultLayout>
+          <Component {...pageProps} />
+        </DefaultLayout>
       </Provider>
     </>
   );
