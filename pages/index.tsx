@@ -8,7 +8,7 @@ const Container = styled.div`
 `;
 
 const index: React.FC = () => {
-  return <Container>hello world</Container>;
+  return <Container>관리자 Main</Container>;
 };
 
 export default index;
