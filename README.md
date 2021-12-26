@@ -1,5 +1,4 @@
-# Jebs admin
-React, Nextjs 기반으로 작성되는 Jebs admin
+React, Nextjs 기반으로 작성되는 boiler plate
 
 ## How to run
 ### node, npm version
